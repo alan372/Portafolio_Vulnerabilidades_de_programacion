@@ -9,53 +9,9 @@ en esta semana entre en un curso de c++ donde me enseñaron lo primero por que e
 4.-y ponerle return 0 para mostrar que ya esta cerrado.
 
 
-Programa de hola mundo:
-
-#include <iostream>
-using  namespace std;
-
-int main()
-{
-	cout << "Hola Virginia Hernadez Lagarde" << endl;
-	system("pause");
-	return 0;
-
-}
+ Programa de hola mundo: demostrado en la seccion de codigo semana dos como ejercicio 1
+  Despues hubo un ejercicio de variables con enteros En este ejemplo no se pueden agregar decimal y al momento de correr con por ejemplo 6.2 nada mas marca 6. marcado como ejercicio 2
+  Ahora uno que marca el decimal con el comando flotante marcado como ejercicio 2.2
+  Ahora con una letra que se reprecenta con ejercicio 2.3
   
-  despues hubo un ejercicio de variables con enteros y con decimal 
-  
-  #include <iostream>
-  
-  int main(){
-    int entero=10;
-    std::cout<<entero;
-    std::cin.get();
-    return 0;
-  }
-  
-  en este ejemplo no se pueden agregar decimal y al momento de correr con por ejemplo 6.2 nada mas marca 6.
-  
-  ahora uno que marca el decimal con el comando flotante
-   
-  #include <iostream>
-  
-   int main(){
-    int entero=10;
-    float flotante=9.99;
-    std::cout<<flotante;
-    std::cin.get();
-    return 0;
-  }
-  ahora con una letra
-  
-    
-  #include <iostream>
-  
-   int main(){
-    int entero=10;
-    float flotante=9.99;
-    char caracter=c;
-    std::cout<<caracter;
-    std::cin.get();
-    return 0;
-  }
+  y esos son todos los ejemplos y en la parte de codigos se muestra los ejemplos que realise de cada uno de los que vi esta semana.
