@@ -1,0 +1,47 @@
+ejercicio1 
+#include <iostream>
+using  namespace std;
+
+int main()
+{
+	cout << "Hola Mundo " << endl;
+	system("pause");
+	return 0;
+
+}
+  
+  ejercicio2
+  
+  #include <iostream>
+  
+  int main(){
+    int entero=10;
+    std::cout<<entero;
+    std::cin.get();
+    return 0;
+  }
+  
+ejercicio2.2
+   
+  #include <iostream>
+  
+   int main(){
+    int entero=10;
+    float flotante=9.99;
+    std::cout<<flotante;
+    std::cin.get();
+    return 0;
+  }
+  2.3
+  
+    
+  #include <iostream>
+  
+   int main(){
+    int entero=10;
+    float flotante=9.99;
+    char caracter=c;
+    std::cout<<caracter;
+    std::cin.get();
+    return 0;
+  }
