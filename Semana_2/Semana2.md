@@ -2,7 +2,7 @@
 
 ## Semana 2.
 
-en esta semana entre en un curso de c++ donde me enseñaron lo primero por que es tan importante el c++. despues empesamos con lopractico donde nos muestra como hacer el primer programa y nos explica como funciona.
+En esta semana entre en un curso de c++ donde me enseñaron lo primero por que es tan importante el c++. despues empesamos con lopractico donde nos muestra como hacer el primer programa y nos explica como funciona.
 1.-empezamos con las librerias como funcionan  com iostrea que seria la entrada y salida de datos
 2.-int main que es la funcion principal
 3.-despues cramos un hola mundo poniendo primero el cout que imprimira todo lo que se escriba
