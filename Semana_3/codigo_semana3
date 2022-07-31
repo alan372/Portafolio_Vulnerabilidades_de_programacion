@@ -1,1 +1,29 @@
+ejemplo 1:
 
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main()
+{
+	int nump, x, cantp, prec, cuenta;
+	int total = 0;
+	string prod;
+	cout << "cuantos prodctos vas a comprar " << endl;
+	cin >> nump;
+	for (x = 1; x <= nump; x++)
+	{
+		cout << "ingresa tu producto " << endl;
+		cin >> prod;
+		cout << " cantidad a comprar " << endl;
+		cin >> cantp; cout << " Precio " << endl;
+		cin >> prec;
+		cuenta = cantp * prec;
+		cout << " el total a pagar de " << prod << " es : $" << cuenta <<
+			endl;
+		total = total + cuenta;
+	}
+	cout << "tu total a pagar es : $" << total << endl;
+}
+ 
+ 
+Ejercicio 1:
