@@ -1,0 +1,280 @@
+ejercicio 1 
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+class Persona {
+private: //Atributos
+	int edad;
+	string nombre, sexo;
+public://Métodos
+	Persona(int, string, string);//Constructor//
+	void imprimir();
+};
+//Constructor para los atributos
+Persona::Persona(int _edad, std::string _nombre, std::string _sexo) {
+	edad = _edad;
+	nombre = _nombre;
+	sexo = _sexo;
+}
+void Persona::imprimir() {
+	cout << "Soy " << nombre << " y mi edad es " << edad << " y mi sexo es " << sexo << endl;
+}
+int main()
+{
+	Persona p1(20, "Alan", "Masculino");
+	p1.Persona::imprimir();
+	system("pause");
+	return 0;
+}
+
+
+ejercicio 2:
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n, opcion;
+	do
+	{
+		cout << "\n";
+		cout << "\n 1. Calcular el area de un Triangulo.", 163;
+		cout << "\n 2. Calcular el area de un Cuadrado ", 163;
+		cout << "\n 3. Calcular el area de un Circulo ", 163;
+		cout << "\n 4. Calcular el area de un Trapecio ", 163;
+		cout << "\n 5. Salir";
+		cout << "\n\n Introduzca una opcion del listado (1-5):", 162;
+		scanf_s("%d", &opcion);
+		switch (opcion)
+		{
+		case 1:
+			//Area del Triangulo cout << "\n";
+			double b, h;
+			cout << "Ingresa la base del triangulo: "; cin >> b;
+			cout << "Ingrea la altura del triangulo: "; cin >> h;
+			double area;
+			area = b * h / 2;
+			cout << "\n";
+			cout << "****************El Resultado es: ************" << endl;
+			cout << "*********************" << area << "******************"
+				<< endl;
+			cout << "*******************************************";
+			break;
+		case 2:
+			//Area del Cuadrado
+			int lado;
+			cout << "\n";
+			cout << R"(Para realizar la operacion ingresa el lado del cuadrado:)"; 
+			cin >> lado;
+				area = lado * lado;
+			cout << "****************El Resultado es: ************" << endl;
+			cout << area << endl;
+			cout << "*******************************************" << endl;
+			break;
+		case 3:
+			//Area del Circulo
+			float r, Area, perimetro; cout << "\n";
+			cout << "Ingrese el valor del radio de tu circulo: "; cin >> r;
+			Area = 3.1416 * r * r; perimetro = 2 * 3.1416 * r;
+			cout << "****************El Resultado es: ************ " << endl;
+			cout << "\n El Area del Circulo es: " << Area << endl;
+			cout << "\n El Perimetro del Circulo es: " << perimetro << endl;
+			cout << "*******************************************";
+			break;
+		case 4:
+			//Area del Trapecio cout << "\n";
+			float BaseM, Base, Altura;
+			cout << "Ingresa la Base Menor:"; cin >> BaseM;
+			cout << "Ingresa la Base Mayor:"; cin >> Base;
+			cout << "Ingresa la Altura:"; cin >> Altura;
+			Area = (BaseM + Base) * Altura / 2; cout << "\n";
+			cout << "respuesta " << endl;
+			cout << "El Area del trapecio es: " << Area << endl;
+			break;
+		}
+	} while (opcion != 5);
+	return 0;
+}
+
+
+ejercicio 3-listado de escuela.
+
+#include <iostream>
+
+using namespace std;
+
+struct registro {
+    char nombre[35], nombreProfesor[36], nombreClase[37];
+    string control, sexo, semestre, titulos, cedula, materias, profesor, credito;
+    int edad;
+};
+
+registro persona[10];
+
+void listadoAlumnos();
+void listadoMaestro();
+void listadoClase();
+void registrarAlumno();
+void registrarMaestro();
+void registrarClase();
+int i = 0;
+
+
+int main()
+{
+    int op, op1;
+    do {
+        cout << "\t\n\tMenu\n\n";
+        cout << "1.Registrar alumno " << endl;
+        cout << "2.Registrar maestro " << endl;
+        cout << "3.Registrar Clase " << endl;
+        cout << "4.ver listado Alumnos" << endl;
+        cout << "5.ver listado Clase" << endl;
+        cout << "6.ver listado Maestro" << endl;
+        cout << "7.Salir " << endl;
+        cout << "Escoja una opcion: " << endl;
+        cin >> op;
+        //system("cls");
+        switch (op) {
+        case 1:
+            registrarAlumno();
+            //system("cls");
+            break;
+        case 2:
+            registrarMaestro();
+            //system("cls");
+            break;
+        case 3:
+            registrarClase();
+            //system("cls");
+            break;
+
+        case 4:
+            listadoAlumnos();
+            break;
+        case 5:
+            listadoClase();
+            break;
+        case 6:
+            listadoMaestro();
+            break;
+        case 7:
+            cout << "\t\n\tSALIENDO\n\n";
+            return 0;
+            break;
+        default:
+            cout << "\t\n\tError de opcion\n\n";
+            break;
+        }
+        cout << "Desea regresar al menu\n" << endl;
+        cout << "1.SI/2.NO" << endl;
+        cin >> op1;
+    } while (op1 == 1);
+
+    getchar();
+
+    return 0;
+}
+
+void listadoAlumnos() {
+    int j;
+
+    for (j = 0; j < i; j++) {
+        cout << "NOMBRE COMPLETO: " << persona[j].nombre << endl;
+        cout << "CONTROL: " << persona[j].control << endl;
+        cout << "EDAD: " << persona[j].edad << endl;
+        cout << "SEXO: " << persona[j].sexo << endl;
+        cout << "SEMESTRE: " << persona[j].semestre << endl;
+        cout << "MATERIAS: " << persona[j].materias << endl;
+    }
+}
+void listadoClase() {
+    int j;
+
+    for (j = 0; j < i; j++) {
+        cout << "NOMBRE: " << persona[j].nombreClase << endl;
+        cout << "CREDITO: " << persona[j].credito << endl;
+        cout << "PROFESOR: " << persona[j].profesor << endl;
+
+    }
+}void listadoMaestro() {
+    int j;
+
+    for (j = 0; j < i; j++) {
+        cout << "NOMBRE COMPLETO: " << persona[j].nombreProfesor << endl;
+        cout << "EDAD: " << persona[j].edad << endl;
+        cout << "SEXO: " << persona[j].sexo << endl;
+        cout << "TITULOS: " << persona[j].titulos << endl;
+        cout << "CEDULA: " << persona[j].cedula << endl;
+    }
+}
+
+void registrarAlumno() {
+    int n;
+    cout << "Cuantas personas desea registrar: ";
+    cin >> n;
+    for (i = 0; i < n; i++) {
+        cout << "Registro " << endl;
+        cout << "ingrese el nombre completo: \n";
+        cin.getline(persona[i].nombre, 35);
+        cin.getline(persona[i].nombre, 35);
+        cout << "Ingrese la edad: \n";
+        cin >> persona[i].edad;
+        cout << "Ingrese el numero control: \n";
+        cin >> persona[i].control;
+        cout << "Ingrese su sexo: \n";
+        cin >> persona[i].sexo;
+        cout << "Ingrese su semestre: \n";
+        cin >> persona[i].semestre;
+        cout << "Ingrese sus materias: \n";
+        cin >> persona[i].materias;
+        cout << "Ingrese 2da: \n";
+        cin >> persona[i].materias;
+        cout << "Ingrese 3ra: \n";
+        cin >> persona[i].materias;
+        cout << "Ingrese 4ta: \n";
+        cin >> persona[i].materias;
+    }
+}
+void registrarClase() {
+    int n;
+    cout << "Cuantas clases deseas registrar: ";
+    cin >> n;
+    for (i = 0; i < n; i++) {
+        cout << "Registro " << endl;
+        cout << "ingrese el nombre de clase: \n";
+        cin.getline(persona[i].nombreClase, 37);
+        cin.getline(persona[i].nombreClase, 37);
+        cout << "Ingrese el credito: \n";
+        cin >> persona[i].credito;
+        cout << "Ingrese el profesor: \n";
+        cin >> persona[i].profesor;
+
+    }
+}
+void registrarMaestro() {
+    int n;
+    cout << "Cuantas profesores desea registrar: ";
+    cin >> n;
+    for (i = 0; i < n; i++) {
+        cout << "Registro " << endl;
+        cout << "ingrese el nombre completo del profesor: \n";
+        cin.getline(persona[i].nombreProfesor, 36);
+        cin.getline(persona[i].nombreProfesor, 36);
+        cout << "Ingrese la edad: \n";
+        cin >> persona[i].edad;
+        cout << "Ingrese su sexo: \n";
+        cin >> persona[i].sexo;
+        cout << "Ingrese titulos del profesor: \n";
+        cin >> persona[i].titulos;
+        cout << "Ingrese su cedula: \n";
+        cin >> persona[i].cedula;
+        cout << "Ingrese 2da: \n";
+        cin >> persona[i].cedula;
+        cout << "Ingrese 3ra: \n";
+        cin >> persona[i].cedula;
+        cout << "Ingrese 4ta: \n";
+        cin >> persona[i].cedula;
+    }
+}
