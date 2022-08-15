@@ -3,8 +3,6 @@
 ## Semana 5.
 Lo que aprendí esta semana son como es fue realizar otro pequeño ejercicio mu parecido a otro que hice anterior mente en donde cree un base de datos para una escuela pero con casi la misma estructura nada más que le agregue los datos que pedía el problema para la empresa por lo que no se me dificulto mucho por lo que les muestro el codigo en el siguiente
 
-![image](https://user-images.githubusercontent.com/58115753/184575811-b6f9bfc7-4438-41ac-9017-83d692d9701c.png)
-
 // primer ejercicio
  
 #include <iostream>
@@ -92,12 +90,18 @@ void registrar() {
         cin >> persona[i].pais;
     }
 }
+	// IMAGENES DE EJEMPLOS:
+	
+![image](https://user-images.githubusercontent.com/58115753/184575996-a85cd18e-964c-4540-aa55-f4ffb01699d2.png)
+![image](https://user-images.githubusercontent.com/58115753/184576069-b0ef1436-766c-4b76-8b89-2234b5907616.png)
+![image](https://user-images.githubusercontent.com/58115753/184576148-1d6d04cb-1a87-4c6e-86c2-4046eb1fd76c.png)
+
 
   por lo que el anterior codigo  como segunda actividad se hizo un código para sacar la raíz de cualquier número x después que ese eleve al cuadrado y que se reste 1 y por ultimo que el resultado 1 se divida entre el segundo el cual seria el sigueinte
 	
 	
 	
-	
+git init
   #include <iostrea>
 	
 #include <math.h> // Librería para operaciones matemáticas básicas.
