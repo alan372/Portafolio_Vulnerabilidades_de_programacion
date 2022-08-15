@@ -4,9 +4,9 @@
 Lo que aprendí esta semana son como es fue realizar otro pequeño ejercicio mu parecido a otro que hice anterior mente en donde cree un base de datos para una escuela pero con casi la misma estructura nada más que le agregue los datos que pedía el problema para la empresa por lo que no se me dificulto mucho por lo que les muestro el codigo en el siguiente
 
 
-
+// primer ejercicio
  
-  #include <iostream>
+#include <iostream>
 
 using namespace std;
 
