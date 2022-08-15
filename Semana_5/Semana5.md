@@ -100,11 +100,10 @@ void registrar() {
   por lo que el anterior codigo  como segunda actividad se hizo un código para sacar la raíz de cualquier número x después que ese eleve al cuadrado y que se reste 1 y por ultimo que el resultado 1 se divida entre el segundo el cual seria el sigueinte
 	
 	
-	
-git init
-  #include <iostrea>
-	
-#include <math.h> // Librería para operaciones matemáticas básicas.
+int main(){ // no se cuenta esto del codigo	
+
+#include <iostrea>	
+#include <math.h>
 
 using namespace std;
 
@@ -127,7 +126,7 @@ int main() {
 
 	return 0;
 } 
-  
+ }
   
   como se puede ver este es mas corto pero saca la raiz de los numero especificados 
 
