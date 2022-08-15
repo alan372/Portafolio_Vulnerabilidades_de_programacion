@@ -102,7 +102,9 @@ void registrar() {
 	
 	
 
-//#include <iostrea>	
+//#include <iostrea>
+	
+	
 //#include <math.h>
 
 //using namespace std;
@@ -126,7 +128,13 @@ void registrar() {
 
 	return 0;
 //} 
+	
  //}
   
   como se puede ver este es mas corto pero saca la raiz de los numero especificados 
 
+
+	
+	//imagenes de como funciona
+	
+	![image](https://user-images.githubusercontent.com/58115753/184576896-01d37f52-723a-4e4e-9f30-fd3265c4357d.png)
