@@ -135,6 +135,6 @@ void registrar() {
 
 
 	
-	//imagenes de como funciona
+	//imagenes de como funciona:
 	
 	![image](https://user-images.githubusercontent.com/58115753/184576896-01d37f52-723a-4e4e-9f30-fd3265c4357d.png)
