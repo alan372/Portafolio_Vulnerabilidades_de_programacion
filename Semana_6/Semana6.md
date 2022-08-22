@@ -5,6 +5,10 @@
 Lo que aprendí esta semana fue a cómo usar la integración de herencia y colecciones, Modificación de clases, Herencia de clases, Utilización de colecciones entre otras cosas para hacer una base de datos más sofisticada dividida por partes con la lista de profesores y los cursos esta vez llenando con datos para que se pueda diferenciar que alumnos ya estaban registrados y cuales no por lo que es mejor base de datos ya que cada uno está ya registrado desde el código y se va registrando, también agrega una base que busca si pones el nombre especifico conforme se registren más a continuación mi código y después capturas de como se ve. 
 
 #Imagenes de ejemplo
+![image](https://user-images.githubusercontent.com/58115753/185820995-f525f478-41ac-430d-a2c1-7d1a53c06baa.png)
+![image](https://user-images.githubusercontent.com/58115753/185821008-3b79b22f-e1a2-4cac-bf10-de2409cb6985.png)
+![image](https://user-images.githubusercontent.com/58115753/185821015-e38ece88-ce5f-4a3a-8a6f-2ac4449a2347.png)
+![image](https://user-images.githubusercontent.com/58115753/185821020-80a4f650-39f7-4afa-a4dd-0b37db137df2.png)
 
 
 #include <iostream>
